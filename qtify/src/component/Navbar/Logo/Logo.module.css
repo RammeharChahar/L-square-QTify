@@ -1,0 +1,26 @@
+.logoItems{
+    display: flex;
+    color: var(--color-white);
+}
+.logoImage{
+    position: absolute;
+    top: 20px;
+    left: 32px;
+    width: 28px;
+    height: 24px;
+    line-height: 24px;
+    font-weight: 900;
+}
+.musicText{
+    margin-left: 14px;
+    margin-right: 10px;
+    line-height: 24px;
+    font-weight: 600;
+    font-size: 18px;
+}
+.text2{
+    line-height: 24px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-size: 18px;
+}
