@@ -1,0 +1,46 @@
+.wrapperCard{
+    width: 159px;
+    height: 232px;
+    /* margin-left: 20px; */
+}
+.cardTop{
+    width: 159px;
+    height: 205px;
+    border-radius: 10px;
+    background-color: var(--color-white);
+}
+.cardImage{
+    width: 100%;
+    height: 170px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    
+}
+.image{
+    width: 100%;
+    height: 170px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.chipDiv{
+    width: 100%;
+    height: 35px;
+    display: flex;
+    align-items: center;
+}
+.chipDiv .chip{
+  background: var(--color-black);
+  color: var(--color-white);
+  margin-left: 6px;
+}
+.cardBottom{
+    width: 100%;
+    height: 27px;
+    display: flex;
+    align-items: flex-end;
+}
+.title{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+}
