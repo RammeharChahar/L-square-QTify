@@ -5,8 +5,8 @@ import Card from '../Card/Card';
 import Carousel from '../Carousel/Carousel';
 
 function Section({title,data,type}) {
-   const [toggleBtn,setToggleBtn] = useState(true);
-   const [toggleText,setToggleText] = useState('Collapse');
+   const [toggleBtn,setToggleBtn] = useState(false);
+   const [toggleText,setToggleText] = useState('Show All');
 
    const handleToggle = () =>{
     if(toggleBtn){
