@@ -1,0 +1,20 @@
+.prevButton,
+.nextButton {
+  cursor: pointer;
+  padding: 0px;
+  background: transparent;
+  border: none;
+}
+.prevButton:hover,
+.nextButton:hover {
+    background: transparent;
+}
+.customContainer {
+    position: absolute;
+    top: 45%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    z-index: 20;
+  }
