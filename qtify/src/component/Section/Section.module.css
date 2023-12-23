@@ -5,10 +5,19 @@
     display: flex;
     justify-content: space-between;
 }
+.title1{
+    font-size: 100px;
+}
 .heading{
     font-size: 20px;
     font-weight: 600;
     line-height: 30px;
+}
+.heading1{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    margin-bottom: 0px;
 }
 .title .button1{
     color: var(--color-primary);
@@ -23,4 +32,13 @@
     row-gap: 15px;
     column-gap: 24px;
     margin-top: 6px;
+}
+.songWrapper{
+    border-top: 1px solid var(--color-primary);
+    border-bottom: 1px solid var(--color-primary);
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+.tab{
+    color: white;
 }

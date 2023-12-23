@@ -2,13 +2,13 @@ import React, { useEffect, useState } from "react";
 import ReactDOM from 'react-dom/client';
 import axios from 'axios';
 import './App.css';
+import styles from "./App.module.css";
 import Navbar from "./component/Navbar/Navbar";
 import Hero from "./component/Hero/Hero";
 import Section from "./component/Section/Section";
 import { fetchSongs, fetchTopAlbums, fetctNewAlbums } from "./Api/api";
 
 function App() {
-  const [albumData,setAlbumData] = useState([]);
   const [data,setData] = useState({});
   // useEffect(() =>{
   //  async function fetchData(){
@@ -40,9 +40,11 @@ function App() {
     <div className="App">
      <Navbar />
      <Hero />
-     <Section title="Top Album" data={topAlbums}/>
+     <Section title="Top Album" data={topAlbums} type={"album"}/>
      <br/>
-     <Section title="New Album" data={newAlbums}/>
+     <Section title="New Album" data={newAlbums} type={"album"}/>
+     <br/>
+     <Section title="Songs" data={songs} type={"song"}/>
     </div>
   );
 }

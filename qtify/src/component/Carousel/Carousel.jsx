@@ -9,7 +9,7 @@ import { useEffect, useRef } from "react";
 import leftIcon from "../../assets/left-slide.svg";
 import rightIcon from "../../assets/right-slide.svg";
 
-function Carousel({ data2 }) {
+function Carousel({ data2 ,type}) {
   const swiperRef = useRef(null);
   const swiper = useSwiper();
   const CustomPrevButton = () => (
@@ -47,7 +47,7 @@ function Carousel({ data2 }) {
       >
         {data2.map((ele) => (
           <SwiperSlide>
-            <Card data1={ele} />
+            <Card data1={ele} type={type}/>
           </SwiperSlide>
         ))}
         <div className={styles.customContainer}>
