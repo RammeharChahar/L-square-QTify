@@ -1,10 +1,12 @@
 import React from "react";
 import styles from "./Card.module.css";
 import Chip from '@mui/material/Chip';
+import Tooltip from '@mui/material/Tooltip';
 
 function Card({data1,type}) {
   if(type==="album"){
     return (
+      <Tooltip title={`${data1.songs.length} songs`} placement="top" arrow>
       <div className={styles.wrapperCard}>
         <div className={styles.cardTop}>
           <div className={styles.cardImage}>
@@ -22,6 +24,7 @@ function Card({data1,type}) {
         <p className={styles.title}>{data1.title}</p>
         </div>
       </div>
+      </Tooltip>
     );
   }else{
     return (
